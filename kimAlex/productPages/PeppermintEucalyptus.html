@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Peppermint & Eucalyptus</title>
+      <style type= "text/css">
+        head
+        {
+            background-color: green;
+        }
+            </style>
+</head>
+
+<body>
+<h2>Pure Life Butter Peppermint & Eucalyptus</h2>
+<p>For arthritis, rheumatism, and joint inflammation, etc.</p>
+
+<table>
+    <tr>
+        <th>Container Size</th><th>Price</th><th>Quantity</th>
+    </tr>
+    <tr>
+        <td>8 oz</td><td>$17.99</td><td><input type="number" name="number" id="number"/></td>
+    </tr>
+    <tr>
+        <td>16 oz</td><td>$29.99</td><td><input type="number" name="number" id="number"/></td>
+    </tr>
+    <tr>
+        <td><input type="submit" value="Add To Cart"/></td>
+    </tr>
+</table>
+
+<form name="_xclick" target="paypal" action="" method="post">
+<input type="hidden" name="cmd" value="_cart">
+<input type="hidden" name="business" value="">
+<input type="hidden" name="currency_code" value="USD">
+<input type="hidden" name="item_name" value="butter">
+<input type="hidden" name="amount" value="29.99">
+<input type="image" src="http://www.paypal.com/en_US/i/btn/sc-but-01.gif" border="0" name="submit" alt="Make payments with PayPal - it's fast, free and secure!">
+<input type="hidden" name="add" value="1">
+</form>
+
+<form name="_xclick" target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_cart">
+<input type="hidden" name="business" value="">
+<input type="image" src="https://www.paypal.com/en_US/i/btn/view_cart.gif" border="0" name="submit" alt="Make payments with PayPal - it's fast, free and secure!">
+<input type="hidden" name="display" value="1">
+</form>
+
+<p>At this time we are currently only accepting Cash and Money Orders. A 6% sales Maryland Sales tax to your purchase.
+We apologize for any inconvience this may cause. </br><strong> We Thank You For Your Business!</strong></p>
+
+<p><a href="product.html">Go Back</a></p>
+</body>
+</html>
