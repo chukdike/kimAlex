@@ -4,14 +4,61 @@
 <head>
     <title>Products</title>
             <style type= "text/css">
-        ul2
-        {            
-            list-style-type: none
-            padding: 0 px;
-            margin: 0 px;
-            font: georgia;
-        }
-        li a:link, li a:visited
+                        ul.rig {list-style: none;
+                font-size: 0px;}
+        ul.rig li {display: inline-block;
+                   padding: 10px;
+                   background: #fff;
+                   border: 1px solid #ddd;
+                   font-size: 16px;
+                   font-size: 1rem;
+                   vertical-align: top;
+                   box-shadow: 0 0 5px #ddd;
+                   box-sizing: border-box;
+                  -moz-box-sizing: border-box;
+                  -webkit-box-sizing: border-box;}
+        ul.rig li img {max-width: 100%;
+                       height: auto;
+                       margin: 0 0 10px;}
+        ul.rig li h3 {margin: 0 0 5px;}
+        ul.rig li p {font-size: .9em;
+                    line-height: 1.5em;
+                    color: #999;}
+        ul.rig {list-style: none;
+                font-size: 0px;
+                margin-left: -2.5%; /* should match li left margin */}
+        ul.rig li {display: inline-block;
+                    padding: 10px;
+                    margin: 0 0 2.5% 2.5%;
+                    background: #fff;
+                    border: 1px solid #ddd;
+                    font-size: 16px;
+                    font-size: 1rem;
+                    vertical-align: top;
+                    box-shadow: 0 0 5px #ddd;
+                    box-sizing: border-box;
+                    -moz-box-sizing: border-box;
+                    -webkit-box-sizing: border-box;}
+/* class for 2 columns */
+        ul.rig.columns-2 li {width: 47.5%;}
+/* this value + 2.5 should = 50% */
+@media (max-width: 480px) {
+	ul.grid-nav li {
+		display: block;
+		margin: 0 0 5px;
+	}
+	ul.grid-nav li a {
+		display: block;
+	}
+	ul.rig {
+		margin-left: 0;
+	}
+	ul.rig li {
+		width: 100% !important; /* over-ride all li styles */
+		margin: 0 0 20px;
+	}
+}
+        ul.nav {li a:link, li a:visited
         {
             text-decoration: none;
             color: black;
@@ -32,31 +79,80 @@
         {
             background-color: green;
         }
-        h4
-        {
-            font-size: 35px;
         }
+        
             </style>
 </head>
 <body>
-<img src="E:\personalFiles\webDev\kimAlex\images\pureLifeTree.png" alt="Pure Life Logo Tree"/>
-    <h4>Skin Cosmetics</h4>
+<a href="../main.html"><img src="E:\personalFiles\webDev\kimAlex\images\pureLifeTree.png" alt="Pure Life Logo Tree"/></a>
+    <h1>Products</h1>
+<form name="_xclick" target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_cart">
+<input type="hidden" name="business" value="">
+<input type="image" src="https://www.paypal.com/en_US/i/btn/view_cart.gif" border="0" name="submit" alt="Make payments with PayPal - it's fast, free and secure!">
+<input type="hidden" name="display" value="1">
+</form>
+    <h2>Skin Cosmetics</h2>
+    
+        <h3>Pure Life Butter Peppermint & Eucalyptus</h3>
+<ul class="rig">
+	<li>
+		<img src="E:\personalFiles\webDev\kimAlex\images\6788B21.jpg" />
+		<h3>Peppermint & Eucalyptus 4 oz</h3>
+		<p>For arthritis, rheumatism, and joint inflammation, etc...</p>
+	</li>
+	<li>
+		<img src="E:\personalFiles\webDev\kimAlex\images\mason-jar-8oz-1.jpg" />
+		<h4>Peppermint & Eucalyptus 8 oz</h4>
+		<p>For arthritis, rheumatism, and joint inflammation, etc...</p>
+	</li>
+</ul>
+<table>
+    <tr>
+        <th>Container Size</th><th>Price</th><th>Quantity</th>
+    </tr>
+    <tr>
+        <td>8 oz</td><td>$17.99</td><td><input type="number" name="number" id="number"/></td>
+    </tr>
+    <tr>
+        <td>16 oz</td><td>$29.99</td><td><input type="number" name="number" id="number"/></td>
+    </tr>
+    <tr>
+        <td><input type="submit" value="Add To Cart"/></td>
+    </tr>
+	
+	<form name="_xclick" target="paypal" action="" method="post">
+<input type="hidden" name="cmd" value="_cart">
+<input type="hidden" name="business" value="">
+<input type="hidden" name="currency_code" value="USD">
+<input type="hidden" name="item_name" value="butter">
+<input type="hidden" name="amount" value="29.99">
+<input type="image" src="http://www.paypal.com/en_US/i/btn/sc-but-01.gif" border="0" name="submit" alt="Make payments with PayPal - it's fast, free and secure!">
+<input type="hidden" name="add" value="1">
+</form>
+	
+</table>
+
+        <h5>Peppermint Fragrance</h5>
+        <h5>Lavender Fragrance</h5>
+        <h5>Vanilla Fragrance</h5>
+        <h5>Unscented Fragrance</h5>
+
+    <h3>Scalp Treatment</h3>
     <ul>
-        <li><a href="PeppermintEucalyptus.html">Peppermint & Eucalyptus</a></li>
-        <li><a href="Peppermint.html">Peppermint Fragrance</a></li>
-        <li><a href="Lavender.html">Lavender Fragrance</a></li>
-        <li><a href="Vanilla.html">Vanilla Fragrance</a></li>
-        <li><a href="Unscented.html">Unscented Fragrance</a></li>
+        <h5>Scalp Stimulation and Therapy</h5>
+        <h5>Hair Growth and Stengthener</h5>
     </ul>
-    <h4>Scalp Treatment</h4>
-    <ul>
-        <li><a href="ScalpStimulation.html">Scalp Stimulation and Therapy</a></li>
-        <li><a href="HairGrowth.html">Hair Growth and Stengthener</a></li>
-    </ul>
-    <ul>
+    
+<p>At this time we are currently only accepting Cash and Money Orders. A 6% sales Maryland Sales tax to your purchase.
+We apologize for any inconvience this may cause. </br><strong> We Thank You For Your Business!</strong></p>
+
+    <ul class="nav">
         <li><a href="../main.html">Return To Main Menu</a></li>
         <li><a href="F:\personalFiles\webDev\kimAlex\about\about.html">About</a></li>
         <li><a href="F:\personalFiles\webDev\kimAlex\contact\contact.html">Contact Me</a></li>
     </ul>
+
+
 </body>
 </html>
